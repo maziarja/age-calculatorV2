@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/css/general.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/queries.css" />
+
+    <script defer type="module" src="src/js/controller.js"></script>
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <div class="calculator-container">
+      <form class="form" id="myForm">
+        <div class="date">
+          <label class="label" for="day">DAY</label>
+          <input
+            class="input"
+            type="number"
+            value=""
+            placeholder="DD"
+            id="day"
+            name="DAY"
+          />
+          <div class="error-msg"></div>
+        </div>
+        <div class="date">
+          <label class="label" for="month">MONTH</label>
+          <input
+            class="input"
+            type="number"
+            value=""
+            placeholder="MM"
+            id="month"
+            name="MONTH"
+          />
+          <div class="error-msg"></div>
+        </div>
+        <div class="date">
+          <label class="label" for="year">YEAR</label>
+          <input
+            class="input"
+            type="number"
+            value=""
+            placeholder="YYYY"
+            id="year"
+            name="YEAR"
+          />
+          <div class="error-msg"></div>
+        </div>
+      </form>
+      <div class="line">
+        <button class="btn" type="submit" form="myForm">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="46"
+            height="44"
+            viewBox="0 0 46 44"
+          >
+            <g fill="none" stroke="#FFF" stroke-width="2">
+              <path
+                d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"
+              />
+            </g>
+          </svg>
+        </button>
+      </div>
+
+      <div class="results">
+        <p class="text-result"><span class="result">- -</span>years</p>
+        <p class="text-result"><span class="result">- -</span>months</p>
+        <p class="text-result"><span class="result">- -</span>days</p>
+      </div>
+    </div>
+  </body>
+</html>

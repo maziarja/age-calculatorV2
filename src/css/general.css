@@ -1,0 +1,64 @@
+/*
+
+--- 01 Typography 
+
+-font size system (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+-font-height
+default: 1
+
+-font-weights
+default: 400
+
+--- 02 color
+
+-primary: 
+- Purple: hsl(259, 100%, 65%)
+- Light red: hsl(0, 100%, 67%)
+
+- neutral:
+- White: hsl(0, 0%, 100%)
+- Off white: hsl(0, 0%, 94%)
+- Light grey: hsl(0, 0%, 86%)
+- Smokey grey: hsl(0, 1%, 44%)
+- Off black: hsl(0, 0%, 8%)
+
+--- 03 shadows
+
+--- 06 border-radius
+
+---07 whitespace
+
+- spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  /* 10 (default browser fonts) / 16 (px = 1rem) * 100 (%) */
+  font-size: 62.5%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  max-width: 144rem;
+  background-color: hsl(0, 0%, 94%);
+
+  display: flex;
+  justify-content: center;
+  padding: 0 2rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}

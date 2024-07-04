@@ -1,0 +1,68 @@
+/******************/
+/* BELOW 896px (tablets) */
+/******************/
+
+@media (max-width: 56em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/******************/
+/* BELOW 650px (smaller tablets) */
+/******************/
+
+@media (max-width: 40.6em) {
+  .calculator-container {
+    width: 100%;
+  }
+  .text-result {
+    font-size: 7rem;
+    margin-bottom: 1rem;
+  }
+  .input::placeholder {
+    font-size: 2rem;
+  }
+}
+/******************/
+/* BELOW 530px (Phones) */
+/******************/
+@media (max-width: 33.12em) {
+  html {
+    font-size: 37.5%;
+  }
+  .input::placeholder {
+    font-size: 1.7rem;
+  }
+}
+/******************/
+/* BELOW 375px (Phones) */
+/******************/
+@media (max-width: 23.43em) {
+  .calculator-container {
+    width: 375px;
+    padding: 4rem;
+    border-bottom-right-radius: 10rem;
+  }
+  .form {
+    width: 100%;
+    margin-bottom: 6.7rem;
+  }
+
+  .date {
+    width: 45%;
+    flex: 0 1 100px;
+  }
+
+  .btn {
+    padding: 1.5rem;
+    left: 50%;
+  }
+  svg {
+    height: 20px;
+    width: 22px;
+  }
+  .results {
+    margin-top: 6.7rem;
+  }
+}
