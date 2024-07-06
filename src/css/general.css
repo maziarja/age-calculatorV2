@@ -50,9 +50,10 @@ body {
   font-family: "Poppins", sans-serif;
   max-width: 144rem;
   background-color: hsl(0, 0%, 94%);
-
+  min-height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 0 2rem;
 }
 
